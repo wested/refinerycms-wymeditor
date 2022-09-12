@@ -17,6 +17,7 @@ module Refinery
           wymeditor/skins/refinery/*
           wymeditor/skins/refinery/**/*
           refinery/wymeditor.js
+          refinerycms_wymeditor_manifest.js
         )
       end
 
