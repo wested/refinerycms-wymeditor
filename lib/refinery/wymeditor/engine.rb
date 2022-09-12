@@ -8,6 +8,8 @@ module Refinery
 
       # set the manifests and assets to be precompiled
       config.to_prepare do
+        Rails.autoloaders.main.ignore(File.join(Refinery::Wymeditor::Engine.root, "app/decorators"))
+
         Rails.application.config.assets.precompile += %w(
           wymeditor.css
           theme.css
